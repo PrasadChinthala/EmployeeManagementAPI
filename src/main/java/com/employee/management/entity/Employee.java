@@ -6,7 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Column;
 
-@Enity
+@Entity
 public class Employee {
 
     @Id
@@ -25,7 +25,7 @@ public class Employee {
 
     }
 
-    public Employee(int id, String name, int age, double salary, String department) {
+    public Employee(Integer id, String name, int age, double salary, String department) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -33,7 +33,7 @@ public class Employee {
         this.department = department;
     }
 
-    public int getId() {
+    public Integer getId() {
         return this.id;
     }
     public String getName() {
@@ -47,5 +47,21 @@ public class Employee {
     }
     public String getDepartment() {
         return this.department;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
     }
 }

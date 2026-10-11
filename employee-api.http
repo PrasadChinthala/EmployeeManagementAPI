@@ -1,0 +1,27 @@
+### Create an employee
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "name": "Prasad",
+  "age": 28,
+  "salary": 60000,
+  "department": "IT"
+}
+
+### Get all employees
+GET http://localhost:8080/employees
+
+### Update an employee
+PUT http://localhost:8080/employees/1
+Content-Type: application/json
+
+{
+  "name": "Prasad",
+  "age": 28,
+  "salary": 70000,
+  "department": "Engineering"
+}
+
+### Delete an employee
+DELETE http://localhost:8080/employees/1
